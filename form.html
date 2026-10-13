@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запропонувати місто</title>
+</head>
+<body>
+    <header>
+        <h1>Запропонувати місто для рейтингу</h1>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="city-kyiv.html">Київ</a>
+            <a href="city-paris.html">Париж</a>
+            <a href="city-tokyo.html">Токіо</a>
+            <a href="form.html">Запропонувати місто</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Твоя пропозиція</h2>
+
+            <p>Заповни форму та запропонуй місто,
+            яке варто додати до наступного рейтингу.</p>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="name">Твоє ім'я:</label><br>
+                    <input type="text" id="name"
+                           name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Електронна пошта:</label><br>
+                    <input type="email" id="email"
+                           name="email" required>
+                </p>
+
+                <p>
+                    <label for="city">Назва міста:</label><br>
+                    <input type="text" id="city"
+                           name="city" required>
+                </p>
+
+                <p>
+                    <label for="country">Країна:</label><br>
+                    <input type="text" id="country"
+                           name="country" required>
+                </p>
+
+                <p>
+                    <label for="type">Тип міста:</label><br>
+                    <select id="type" name="type" required>
+                        <option value="">Обери тип</option>
+                        <option value="historical">Історичне</option>
+                        <option value="modern">Сучасне</option>
+                        <option value="nature">Місто біля природи</option>
+                        <option value="cultural">Культурне</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="reason">
+                        Чому варто відвідати це місто?
+                    </label><br>
+                    <textarea id="reason" name="reason"
+                              rows="5" cols="40"
+                              required></textarea>
+                </p>
+
+                <button type="submit">Надіслати пропозицію</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Лабораторна робота №1 з WEB-програмування</p>
+        <p><a href="index.html">Повернутися на головну</a></p>
+    </footer>
+</body>
+</html>
